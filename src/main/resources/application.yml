@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      uri: http://localhost:8888 # default
+  config:
+    import: configserver:http://localhost:8888
